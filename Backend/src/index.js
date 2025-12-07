@@ -12,7 +12,7 @@ const debtSimplificationRoutes = require('./routes/debtSimplificationRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/rudo-backend';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://sahoodebashrita1203:431YcQ50bHBydRID@cluster0.z7ps1.mongodb.net/?appName=Cluster0';
 
 // Middleware
 app.use(cors());
@@ -78,5 +78,6 @@ process.on('SIGTERM', () => {
 });
 
 module.exports = app;
+
 
 
